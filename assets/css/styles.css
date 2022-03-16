@@ -92,6 +92,15 @@ header {
   font-weight: 400;
   font-family: var(--secondary-text);
   margin-bottom: 40px;
+  cursor: pointer;
+}
+.header_knowmore i {
+  transition: 0.3s all;
+}
+.header_knowmore:hover i {
+  transition: 0.3s all;
+  transform: translateX(15%);
+  scale: 1.3;
 }
 
 .header_content a {
@@ -100,6 +109,11 @@ header {
   border: 1px solid var(--first-color);
   padding: 12px 40px;
   box-shadow: inset 0 0 5px rgb(160, 147, 147),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.header_content a:hover {
+  box-shadow: inset 0 0 10px rgb(160, 147, 147),
     0 0 9px 3px rgba(27, 253, 156, 0.1);
 }
 
@@ -146,7 +160,7 @@ header {
   cursor: pointer;
   transition: all 1s;
 }
-
+/**js classes**/
 .active {
   right: 0;
   transition: all 1s;
@@ -159,3 +173,4 @@ header {
   right: 5%;
   transition: all 1s;
 }
+/*****/
