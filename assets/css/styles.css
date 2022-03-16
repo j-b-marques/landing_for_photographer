@@ -1,0 +1,161 @@
+:root {
+  --main-text: "Cinzel", serif;
+  --secondary-text: "Lato", sans-serif;
+
+  /**colors*/
+  --first-color: #d19876;
+  --second-color: #0b0b0b;
+  --third-color: #303030;
+}
+
+body {
+  font-family: var(--secondary-text);
+}
+
+/*****landing mobile****/
+header {
+  width: 100%;
+  height: 100vh;
+  background: #0b0b0b;
+  position: relative;
+  overflow: hidden;
+}
+
+.img_header {
+  position: absolute;
+  width: 300px;
+  top: -61px;
+  left: -50px;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(160, 147, 147);
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toggle i {
+  font-size: 2rem;
+}
+.ct_header {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  color: var(--first-color);
+}
+
+.header_title {
+  font-family: var(--main-text);
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header_lead {
+  color: white;
+  font-family: var(--secondary-text);
+}
+
+.header_knowmore {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: var(--secondary-text);
+  margin-bottom: 40px;
+}
+
+.header_content a {
+  color: white;
+  align-self: center;
+  border: 1px solid var(--first-color);
+  padding: 12px 40px;
+  box-shadow: inset 0 0 5px rgb(160, 147, 147),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+/***toogle menu****/
+
+.mobile_menu_bar {
+  background: #303030;
+  width: 40%;
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  z-index: 2;
+  transition: all 1s;
+}
+.nav_bar_mobile {
+  position: absolute;
+  top: 20%;
+  right: -35%;
+  z-index: 3;
+  transition: all 1s;
+}
+
+.nav_bar_mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--secondary-text);
+  font-size: 1rem;
+}
+
+.nav_bar_mobile ul li a {
+  color: var(--first-color);
+}
+
+.close_menu {
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  right: -15%;
+  font-size: 2rem;
+  color: var(--first-color);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.active {
+  right: 0;
+  transition: all 1s;
+}
+.active_times {
+  right: 5%;
+  transition: all 1s;
+}
+.active_links {
+  right: 5%;
+  transition: all 1s;
+}

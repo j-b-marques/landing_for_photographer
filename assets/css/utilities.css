@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: 1400px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
