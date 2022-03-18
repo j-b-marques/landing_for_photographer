@@ -22,15 +22,15 @@ img {
   max-width: 100%;
 }
 
-.container {
+/* .container {
   max-width: 1140px;
   padding: 20px;
   margin: 0 auto;
-}
+} */
 
 .container-xl {
   max-width: 1400px;
-  padding: 40px;
+  padding: 0 1em;
   margin: 0 auto;
 }
 
@@ -38,3 +38,14 @@ p {
   line-height: 1.6;
   margin-bottom: 10px;
 }
+
+section {
+  padding: 4rem 0;
+/*    7rem 0 min:width: 40em;  */
+}
+
+.container {
+  padding: 0 1em;
+  max-width: 60rem;
+  margin: 0 auto;
+} 

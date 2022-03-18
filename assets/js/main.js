@@ -22,3 +22,18 @@ menuToggleClose.addEventListener("click", () => {
   showcaseClose2.classList.remove("active_times");
   showcaseClose3.classList.remove("active_links");
 });
+
+/*Adiciona elementos */
+/* const body = document.body; */
+/* body.append("Hello World"); */ /* posso adiionar strings */
+/* body.appendChild("header"); */ /* posso adicionar divs anchers etc elementos */
+
+/* Criar elemento e adiciona-lo ao body neste caso */
+/* const header = document.createElement("header");
+
+header.innerText = "Hello World2";
+header.textContent = "Hello World3";
+
+body.append(header);
+
+let menu_close_xp = document.(".close_menu") */
